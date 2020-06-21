@@ -1,7 +1,6 @@
 # DUviews
 
-[![CI Status](https://img.shields.io/travis/madadoux/DUviews
-/DUviews.svg?style=flat)](https://travis-ci.org/madadoux/DUviews
+[![CI Status](https://img.shields.io/travis/madadoux/DUviews.svg?style=flat)](https://travis-ci.org/madadoux/DUviews
 )
 [![Version](https://img.shields.io/cocoapods/v/DUviews.svg?style=flat)](https://cocoapods.org/pods/DUviews)
 [![License](https://img.shields.io/cocoapods/l/DUviews.svg?style=flat)](https://cocoapods.org/pods/DUviews)
