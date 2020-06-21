@@ -43,7 +43,7 @@ DESC
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-  #s.swift_versions = '4.0'
+  s.swift_versions = '4.0'
 
   s.source_files = 'Classes/*.{h,m,swift}'
   #s.source_files = 'Classes/**/*.{h,m,swift}'
