@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     }
     
     func setupUI() {
+    
         let label = DULabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 200), parent: nil, font: .systemFont(ofSize: 44), textColor: .black)!
         label.numberOfLines = 0
         label.textAlignment  = .center

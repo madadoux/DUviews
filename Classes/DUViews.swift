@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-func getYPositionCenterForHeightAtCell(cell:UITableViewCell!, height:CGFloat) -> CGFloat
+public func getYPositionCenterForHeightAtCell(cell:UITableViewCell!, height:CGFloat) -> CGFloat
 {
     
     return cell.textLabel!.center.y - height/2.0
     
 }
 
-func clipValue<T:Comparable>(value : T ,min : T ,max : T) -> T  {
+public func clipValue<T:Comparable>(value : T ,min : T ,max : T) -> T  {
       
       if (value < min){
           return min
@@ -29,18 +29,18 @@ func clipValue<T:Comparable>(value : T ,min : T ,max : T) -> T  {
       return value
 }
 
-func delay(seconds:TimeInterval , block: @escaping ()->Void) {
+public func delay(seconds:TimeInterval , block: @escaping ()->Void) {
     DispatchQueue.main.asyncAfter(deadline: .now() + seconds)  {
         block()
     }
 }
-func mainQueue( block: @escaping ()->Void) {
+public func mainQueue( block: @escaping ()->Void) {
     DispatchQueue.main.async {
         block()
     }
 }
 
-func DUContainer(frame:CGRect, backgroundColor:UIColor!, child:UIView!) -> UIView {
+public func DUContainer(frame:CGRect, backgroundColor:UIColor!, child:UIView!) -> UIView {
     
     let parentView:UIView! = UIView(frame:frame)
     
@@ -53,7 +53,7 @@ func DUContainer(frame:CGRect, backgroundColor:UIColor!, child:UIView!) -> UIVie
     return parentView
 }
 
-func DUColumn(frame:CGRect, children:[UIView]!, distribution:UIStackView.Distribution, alignment:UIStackView.Alignment, spacing:CGFloat) -> UIStackView {
+public func DUColumn(frame:CGRect, children:[UIView]!, distribution:UIStackView.Distribution, alignment:UIStackView.Alignment, spacing:CGFloat) -> UIStackView {
     //Stack View
     let stackView:UIStackView! = UIStackView()
     stackView.frame = frame
@@ -68,7 +68,7 @@ func DUColumn(frame:CGRect, children:[UIView]!, distribution:UIStackView.Distrib
     //stackView.translatesAutoresizingMaskIntoConstraints = false;
     return stackView
 }
-func DURow(frame:CGRect, children:[UIView]!, distribution:UIStackView.Distribution, alignment:UIStackView.Alignment, spacing:CGFloat) -> UIStackView {
+public func DURow(frame:CGRect, children:[UIView]!, distribution:UIStackView.Distribution, alignment:UIStackView.Alignment, spacing:CGFloat) -> UIStackView {
     //Stack View
     let stackView:UIStackView! = UIStackView()
     stackView.frame = frame
@@ -84,7 +84,7 @@ func DURow(frame:CGRect, children:[UIView]!, distribution:UIStackView.Distributi
     return stackView
 }
 
-func DUTextButton(frame:CGRect, title:String!, textColor:UIColor!, textFont:UIFont!, onTap: @escaping ()->Void) -> UIButton
+public func DUTextButton(frame:CGRect, title:String!, textColor:UIColor!, textFont:UIFont!, onTap: @escaping ()->Void) -> UIButton
 {
     let button:UIButton! = UIButton(frame:frame)
     button.setTitle(title, for: .normal)
@@ -106,7 +106,7 @@ public func DULabel(frame: CGRect, parent:UIView?, font:UIFont, textColor:UIColo
     return label
 }
 
-func DUSegmentControl(frame:CGRect, parent: UIView? , items: [String], onSelect : @escaping (Int,[String])->Void , currentSelectedIndex: Int = 0 , selectedSegmentColor: UIColor = .blue ) -> UISegmentedControl {
+public func DUSegmentControl(frame:CGRect, parent: UIView? , items: [String], onSelect : @escaping (Int,[String])->Void , currentSelectedIndex: Int = 0 , selectedSegmentColor: UIColor = .blue ) -> UISegmentedControl {
     let segmentItems = items
     
     // configuring segment control
@@ -133,7 +133,7 @@ func DUSegmentControl(frame:CGRect, parent: UIView? , items: [String], onSelect 
 }
 
 
-func DUSwitcher(frame: CGRect , parent : UIView? , onChange:@escaping (Bool)->Void, initValue: Bool = false ) -> UISwitch {
+public func DUSwitcher(frame: CGRect , parent : UIView? , onChange:@escaping (Bool)->Void, initValue: Bool = false ) -> UISwitch {
     let switchButton = UISwitch(frame: frame)
     switchButton.isOn = initValue
 
