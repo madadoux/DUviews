@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DUviews'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'DUviews is collection of UI wrappers around UIKit views that supports writing UI in code very easily'
 
 # This description is used to generate tags and improve search results.
@@ -43,7 +43,7 @@ DESC
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-  s.swift_versions = '4.0'
+  #s.swift_versions = '4.0'
 
   s.source_files = 'Classes/*.{h,m,swift}'
   #s.source_files = 'Classes/**/*.{h,m,swift}'
