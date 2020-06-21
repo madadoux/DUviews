@@ -22,7 +22,7 @@ pod 'DUviews'
 
 ## Author
 
-mohamed saeed, m.saeed@planradar.com
+mohamed saeed, mohedsh@gmail.com
 
 ## License
 
