@@ -21,16 +21,16 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/mohamed saeed/DUviews'
+  s.homepage         = 'https://github.com/madadoux/DUviews'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mohamed saeed' => 'm.saeed@planradar.com' }
-  s.source           = { :git => 'https://github.com/mohamed saeed/DUviews.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/madadoux/DUviews.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'DUviews/Classes/**/*'
+  s.source_files = 'DUviews/Classes/*'
   
   # s.resource_bundles = {
   #   'DUviews' => ['DUviews/Assets/*.png']
