@@ -3,7 +3,8 @@
 # * https://github.com/supermarin/xcpretty#usage
 
 osx_image: xcode10.2
-language: swift
+language:
+ - swift
 # cache: cocoapods
 # podfile: Example/Podfile
 before_install:
