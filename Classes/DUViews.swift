@@ -118,12 +118,12 @@ public func DUSegmentControl(frame:CGRect, parent: UIView? , items: [String], on
     segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
     segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .normal)
 
-    if #available(iOS 13.0, *) {
-        segmentControl.selectedSegmentTintColor = selectedSegmentColor
-    } else {
-        // Fallback on earlier versions
+//    if #available(iOS 13.0, *) {
+//        segmentControl.selectedSegmentTintColor = selectedSegmentColor
+//    } else {
+//        // Fallback on earlier versions
         segmentControl.tintColor = selectedSegmentColor
-    }
+    //}
     
     if let parent = parent {
         parent.addSubview(segmentControl)
